@@ -4,6 +4,9 @@ import { useAccount, useConnect, useDisconnect, useSignMessage } from 'wagmi';
 import { Button, Text, HStack, Avatar, useToast } from '@chakra-ui/react';
 import { getEllipsisTxt } from 'utils/format';
 import { useAuthRequestChallengeEvm } from '@moralisweb3/next';
+// import { logEvent } from 'arena-tools';
+
+// const ARENA_TOKEN = '0je3hbef53z672jrmljyjdr'
 
 const ConnectButton = () => {
   const { connectAsync } = useConnect({ connector: new InjectedConnector() });
